@@ -47,7 +47,8 @@ Process/transform the data (if necessary) into a format suitable for your analys
   total_steps_per_day<-aggregate(steps ~ date, df, sum)
   hist(total_steps_per_day$steps, main = "Total number of steps per day", xlab = "Steps per day")
 ```
-  Calculate and report the mean and median of the total number of steps taken per day
+  
+Calculate and report the mean and median of the total number of steps taken per day
 ```{r}
   mean(total_steps_per_day$steps)
   median(total_steps_per_day$steps)
@@ -61,6 +62,7 @@ Process/transform the data (if necessary) into a format suitable for your analys
   plot(avg_steps_in_an_interval$interval, avg_steps_in_an_interval$steps, type='l', 
        col=1, main="Average number of steps taken by Interval", xlab="Time Intervals", ylab="Mean number of steps")
 ```  
+  
   2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r}
   row<-which.max(avg_steps_in_an_interval$steps)
@@ -94,7 +96,12 @@ Process/transform the data (if necessary) into a format suitable for your analys
   tot_steps_per_day <- aggregate(steps ~ date, df_filled, sum)
   hist(tot_steps_per_day$steps, main = "Total number of steps per day (NA FILLED)", xlab = "Steps per day")
 ```  
-  __calculate and report the mean and median total number of steps taken per day.__ 
+  
+  
+  
+  
+  
+  __Calculate and report the mean and median total number of steps taken per day.__ 
   Do these values differ from the estimates from the first part of the assignment? 
 ```{r}
   print(paste(" Mean total number of steps taken per day", mean(total_steps_per_day$steps)))
