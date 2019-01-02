@@ -69,7 +69,7 @@ Calculate and report the mean and median of the total number of steps taken per 
   print (paste("The interval with the highest avg steps is ", avg_steps_in_an_interval[row, ]$interval, " corresponding to steps: ", avg_steps_in_an_interval[row, ]$steps))
 ```  
  __Imputing missing values__
-  Note that there are a number of days/intervals where there are missing values (coded as \color{red}{\verb|NA|}NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
+  Note that there are a number of days/intervals where there are missing values NA). The presence of missing days may introduce bias into some calculations or summaries of the data.
    1. Calculate and report the total number of missing values in the dataset 
       (i.e. the total number of rows with NAs)
 ```{r}
