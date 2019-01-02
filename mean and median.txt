@@ -1,0 +1,5 @@
+mean(total_steps_per_day$steps)
+## [1] 10766.19
+  median(total_steps_per_day$steps)
+## [1] 10765
+
